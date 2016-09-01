@@ -1,0 +1,16 @@
+---
+# tasks file for ansible-sysstat
+
+- block:
+    - name: Install sysstat packages
+      become: yes
+      apt:
+        name: "{{ item }}"
+        state: present
+        update_cache: yes
+      with_items:
+        - "{{ sysstat_packages }}"
+
+  become: yes
+  tags:
+    - sysstat

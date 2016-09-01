@@ -1,0 +1,4 @@
+---
+# vars file for ansible-sysstat
+sysstat_packages:
+  - sysstat
