@@ -1,6 +1,8 @@
 sysstat
 =========
 
+[![Build Status](https://travis-ci.org/howtodojo/ansible-sysstat.svg?branch=master)](https://travis-ci.org/howtodojo/ansible-sysstat)
+
 This role will install sysstat
 
 Requirements
