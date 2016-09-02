@@ -11,6 +11,13 @@
       with_items:
         - "{{ sysstat_packages }}"
 
+    - name: copy sysstat default configuration
+      template:
+        src: default_sysstat.j2
+        dest: /etc/default/sysstat
+        backup: no
+        mode: "0644"
+        
   become: yes
   tags:
     - sysstat
